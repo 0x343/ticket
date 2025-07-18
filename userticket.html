@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Lotto Chain Decentralizer Betting</title>
+  <title>Faylotto User Ticket | Decentralizer Betting Web3 Social</title>
   <link href="img/logo.svg" rel="icon">
   <link href="img/logo.svg" rel="apple-touch-icon">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&family=Orbitron&display=swap" rel="stylesheet">
@@ -17,14 +17,14 @@
   color: white;
   padding: 20px;
   font-family: 'Ubuntu', sans-serif;
-  overflow-y: auto; /* Pastikan vertical scroll bisa */
-  height: auto; /* Tinggi fleksibel */
-  min-height: 100vh; /* Minimal tinggi layar penuh */
+  overflow-y: auto;
+  height: auto;
+  min-height: 100vh;
   margin: 0;
 }
 
 html {
-  overflow-y: auto; /* Ini juga bantu scroll */
+  overflow-y: auto;
   height: auto;
 }
 
@@ -32,7 +32,7 @@ html {
   background-color: #151515;
   padding: 20px;
   border-radius: 10px;
-  margin-bottom: 100px; /* Tambahan bawah biar scroll terasa */
+  margin-bottom: 100px;
 }
     
     h1, h2 {
@@ -173,12 +173,10 @@ html {
     border-radius: 12px;
 }
 
-/* Hover effect khusus canvas QR */
 .qr-wrapper:hover #qr {
     transform: scale(2);
     box-shadow: 0 0 25px #03a9f4, 0 0 45px #f441a5;
-    background: linear-gradient(90deg, #03a9f4, #f441a5); /* hanya akan terlihat jika ada latar belakang pada canvas */
-}
+    background: linear-gradient(90deg, #03a9f4, #f441a5);
     
     .logos {
       position: absolute;
@@ -201,8 +199,8 @@ html {
         text-align: center;
         margin-top: 20px;
         padding: 10px;
-        background: #111; /* Warna gelap */
-        color: #ddd; /* Warna teks */
+        background: #111;
+        color: #ddd;
         font-size: 12px;
     }
 
@@ -211,34 +209,32 @@ html {
     }
 
     .social-icons a {
-    background: rgba(255, 255, 255, 0.2); /* Transparan seperti kaca */
-    border-radius: 10px; /* Agar sedikit membulat */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
     padding: 10px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: white; /* Warna ikon */
+    color: white;
     font-size: 15px;
     margin: 0 5px;
     text-decoration: none;
     transition: transform 0.5s ease, text-shadow 0.5s ease, box-shadow 0.5s ease;
-    box-shadow: 0 0 10px rgba(0, 0, 255, 0.6); /* Cahaya biru */
-    backdrop-filter: blur(10px); /* Efek blur kaca */
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.6);
+    backdrop-filter: blur(10px);
 }
 
-/* Efek saat hover */
 .social-icons a:hover {
-    color: #1a88ff; /* Warna biru neon */
-    text-shadow: 0 0 10px #1a88ff, 0 0 20px #1a88ff, 0 0 30px #1a88ff; /* Glow lebih intens */
-    box-shadow: 0 0 20px rgba(0, 0, 255, 1), 0 0 30px rgba(0, 0, 255, 0.8); /* Shadow lebih terang */
-    transform: rotate(360deg); /* Efek berputar */
+    color: #1a88ff;
+    text-shadow: 0 0 10px #1a88ff, 0 0 20px #1a88ff, 0 0 30px #1a88ff;
+    box-shadow: 0 0 20px rgba(0, 0, 255, 1), 0 0 30px rgba(0, 0, 255, 0.8);
+    transform: rotate(360deg);
 }
   </style>
 </head>
 <body>
   <div class="container" id="ticketContainer">
     <h1>User Ticket Details</h1><br>
-    <!-- Input betId lookup -->
 <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 40px; margin-top: 30px;">
   <input 
     type="text" 
@@ -278,20 +274,20 @@ html {
     <div class="qr-wrapper" id="qrWrapper">
       <canvas id="qr" width="256" height="256"></canvas>
       <img src="img/logo.svg" class="logos">
-      <div class="watermark">Lotto Chain Decentralized Betting</div>
+      <div class="watermark">Faylotto Decentralized Betting Web3 Social</div>
       <br><button onclick="downloadQR()">Download QR HD</button>
     </div>
     <footer>
     <div class="social-icons">
-        <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://t.me/" target="_blank"><i class="fa-brands fa-telegram"></i></a>
-        <a href="" target="_blank"><i class="fa-brands fa-discord"></i></a>
-        <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://x.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://t.me/FaylottoXyz" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://t.me/Faylotto" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://discord.gg/6uMYTdCZwJ" target="_blank"><i class="fa-brands fa-discord"></i></a>
+        <a href="https://facebook.com/Faylotto" target="_blank"><i class="fa-brands fa-facebook"></i></a>
     </div>
     <p>© 2025 Powered By Lotto Chain. All rights reserved. Play responsibly.</p>
-    </footer>
-  </div>
+</footer>
+    </div>
 
   <script>
     const contractAddress = '0xd08482b5894D5A5A4eca9C941080A88b11937572';
@@ -441,12 +437,10 @@ function loadBetDetailFromInput() {
         return;
     }
 
-    // Append the betId to the URL without reloading
     const newUrl = new URL(window.location.href);
     newUrl.searchParams.set('betId', inputBetId);
     window.history.replaceState(null, '', newUrl.toString());
 
-    // Call main loader
     loadBetDetail();
 }
 
@@ -562,12 +556,11 @@ function shareTo(betId) {
         }, 'image/png');
     }).catch(err => {
         console.error("Failed to generate image:", err);
-        // Fallback ke share hanya URL
         function tryShare(isMobile) {
             if (navigator.share) {
                 navigator.share({
                     title: "Share Bet",
-                    text: "Check out my Lotto Chain ticket!",
+                    text: "Check out My Faylotto ticket!",
                     url: url
                 }).catch(err => {
                     if (err.name !== "AbortError") {
@@ -692,11 +685,9 @@ function downloadQR() {
   canvas.width = hdSize;
   canvas.height = hdSize + 300;
 
-  // Gambar latar belakang putih
   ctx.fillStyle = '#ffffff';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  // Buat offscreen canvas untuk QR
   const qrCanvas = document.createElement("canvas");
   qrCanvas.width = qrSize;
   qrCanvas.height = qrSize;
@@ -710,19 +701,16 @@ function downloadQR() {
     foreground: '#000000',
   });
 
-  // Gambar QR code ke canvas utama dengan padding
   ctx.drawImage(qrCanvas, padding, padding);
 
   const logo = new Image();
-  logo.src = "img/logo.svg"; // Path logo kamu
+  logo.src = "img/logo.svg";
   logo.crossOrigin = "anonymous";
   logo.onload = () => {
-    // Hitung posisi logo di tengah area QR (bukan tengah canvas)
     const logoSize = qrSize * 0.18;
     const logoX = padding + (qrSize - logoSize) / 2;
     const logoY = padding + (qrSize - logoSize) / 2;
 
-    // Gambar logo dengan corner radius
     ctx.save();
     ctx.beginPath();
     const radius = logoSize * 0.2;
@@ -738,30 +726,27 @@ function downloadQR() {
     ctx.drawImage(logo, logoX, logoY, logoSize, logoSize);
     ctx.restore();
 
-    // Tambahkan watermark di bawah QR
     const watermarkY = hdSize + 100;
     ctx.font = `${qrSize * 0.05}px Ubuntu`;
     ctx.textAlign = "center";
 
-    // Shadow putih
     ctx.shadowColor = "#ffffff";
     ctx.shadowBlur = 6;
     ctx.fillStyle = "#ffffff";
-    ctx.fillText("Lotto Chain Decentralized Betting", canvas.width / 2, watermarkY);
+    ctx.fillText("Faylotto Decentralized Betting Web3 Social", canvas.width / 2, watermarkY);
 
-    // Gradient text
     const gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
     gradient.addColorStop(0, "#f441a5");
     gradient.addColorStop(1, "#f441a5");
     ctx.shadowColor = "transparent";
     ctx.fillStyle = gradient;
-    ctx.fillText("Lotto Chain Decentralized Betting", canvas.width / 2, watermarkY);
+    ctx.fillText("Faylotto Decentralized Betting Web3 Social", canvas.width / 2, watermarkY);
 
     completeDownload();
   };
 
   logo.onerror = () => {
-    console.error("Logo gagal dimuat.");
+    console.error("Logo failed to load.");
     completeDownload();
   };
 
@@ -836,7 +821,6 @@ function downloadTCT() {
     });
 }
     
-// Inisialisasi setelah DOM siap
 document.addEventListener("DOMContentLoaded", () => {
     console.log("DOM fully loaded");
     loadBetDetail().then(() => {
@@ -844,7 +828,7 @@ document.addEventListener("DOMContentLoaded", () => {
         setupQREvents();
     }).catch(err => {
         console.error("loadBetDetail failed:", err);
-        setupQREvents(); // Tetap setup QR events meski loadBetDetail gagal
+        setupQREvents();
     });
 });
   </script>
